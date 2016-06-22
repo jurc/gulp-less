@@ -1,0 +1,45 @@
+// Parametric mixins
+
+.green-circle(@size: 75px) {
+    background-color: #4CAF50;
+    border-radius: 100%;
+    width: @size;
+    height: @size;
+    float: left;
+}
+
+.red-square(@size; @neki: 1) {
+    background-color: #FF0000;
+    border: 1px solid #8C0000;
+    width: @size;
+    height: @size;
+    float: left;
+    margin-top: 20px;
+}
+
+#div7 { 
+    .green-circle(100px); 
+}
+
+#div8 {
+    .green-circle();
+    margin: 0 20px;
+}
+
+#div9 { 
+    .green-circle(50px); 
+}
+
+#div10 { 
+    .red-square(100px); 
+}
+
+#div11 {
+    .red-square(75px);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#div12 { 
+    .red-square(50px); 
+}

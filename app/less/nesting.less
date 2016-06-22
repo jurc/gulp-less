@@ -1,0 +1,27 @@
+// Nesting and Scope
+
+@nesting-text-color: blue;
+
+.nesting {
+    p {
+        color: @nesting-text-color;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    ul {
+        @nesting-text-color: white;
+        background-color: lightcyan;
+        padding: 10px;
+        list-style: none;
+
+        li {
+            color: @nesting-text-color;
+            border-radius: 4px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #8C0000;
+            background-color: #4CAF50;
+        }
+    }
+}

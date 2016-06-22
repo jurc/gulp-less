@@ -1,0 +1,46 @@
+// Mixins
+
+
+@light-red: #943333;
+@dark-red: #2e0000;
+@header-font: "Georgia";
+@header-font-size: 20px;
+
+.circle {
+    border-radius: 100%;
+    float: left;
+    text-align: center;
+    padding: 20px;
+}
+
+.circle-text-style() {
+    font-family: @header-font;
+    font-size: @header-font-size;
+}
+
+#div4 {
+    .circle();
+    .circle-text-style();
+    background-color: @dark-red;
+    color: salmon;
+    width: 100px;
+    height: 100px;
+}
+
+#div5 {
+    .circle();
+    .circle-text-style();
+    background-color: @red;
+    color: yellow;
+    width: 200px;
+    height: 200px;
+}
+
+#div6 {
+    .circle();
+    .circle-text-style();
+    background-color: @light-red;
+    color: aqua;
+    width: 100px;
+    height: 100px;
+}

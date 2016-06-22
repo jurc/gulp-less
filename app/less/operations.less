@@ -1,0 +1,31 @@
+// Operations
+
+@div-width: 200px;
+@div-color: #03A9F4;
+@function-color: #004590;
+
+.square {
+    float: left;
+    height: 100px;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#div13 {
+    .square();
+    width: @div-width;
+    background-color: @div-color;
+    
+    &:hover {
+        //background-color: @div-color - 10;
+        background-color: fadeout(@function-color, 50%);
+        cursor: pointer;
+    }
+}
+
+#div14 {
+    .square();
+    width: @div-width * 2.59;
+    background-color: @div-color - 100;
+}
